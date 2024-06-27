@@ -7,7 +7,7 @@ isAmstrong() {
 	do
 		digit=$(( $num % 10 ))
 		sum=$(( $sum + $(( $digit * $digit * $digit )) ))
-		num=$(( $num / 10 ))
+		num=$(( $num / 10 )) 
 	done
 	return $(( $1 == $sum ))
 }
